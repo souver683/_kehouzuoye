@@ -17,12 +17,12 @@ public class Student {
     }
 
     public void setAge(int age) throws AgeLTOException, AgeGT150Exception {
-        if(age<0){
+        if (age < 0) {
             throw new AgeLTOException();
 
-        }else if(age>200){
+        } else if (age > 200) {
             throw new AgeGT150Exception();
-        }else
-        this.age = age;
+        } else
+            this.age = age;
     }
 }
